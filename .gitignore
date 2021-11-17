@@ -1,0 +1,6 @@
+.size-snapshot.json
+
+dist/
+
+yarn-error.log
+node_modules
