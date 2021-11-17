@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist",
+    "emitDeclarationOnly": true,
+    "outDir": "./dist",
+    "strictPropertyInitialization": false,
+    "noImplicitAny": true,
+    "target": "esnext",
+    "module": "esnext",
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": false,
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "skipLibCheck": true,
+    "useUnknownInCatchVariables": false,
+    "types": ["@types/node", "jest"]
+  },
+  "include": ["**/*.ts", "jest.config.js"],
+  "exclude": ["node_modules", "dist"]
+}
