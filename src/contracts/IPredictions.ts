@@ -1,8 +1,8 @@
-import { IPrediction } from "./IPrediction";
+import { IPrediction } from './IPrediction'
 
 export interface IPredictions {
   [path: string]: {
-    prediction: IPrediction;
-    count: number;
-  };
+    prediction: IPrediction
+    count: number
+  }
 }

@@ -1,6 +1,6 @@
-import { IPredictions } from "./contracts/IPredictions";
-import { IPredictor } from "./contracts/IPredictor";
-import { IComputeOptions } from "./contracts/IComputeOptions";
+import { IPredictions } from './contracts/IPredictions'
+import { IPredictor } from './contracts/IPredictor'
+import { IComputeOptions } from './contracts/IComputeOptions'
 
 export default class Predictor<T = any> implements IPredictor<T> {
   /**
@@ -22,18 +22,14 @@ export default class Predictor<T = any> implements IPredictor<T> {
    *    })
    */
   async build(sources: any): Promise<IPredictions> {
-    return this.predictions;
+    return this.predictions
   }
 
   /**
    *
    */
-  async compute(
-    inputs: Partial<T>,
-    options: IComputeOptions,
-    defaults: any = {}
-  ): Promise<T> {
+  async compute(inputs: Partial<T>, options: IComputeOptions, defaults: any = {}): Promise<T> {
     // trick/hack just to prevent eslinting
-    return {} as T;
+    return {} as T
   }
 }

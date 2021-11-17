@@ -1,13 +1,13 @@
 export default class extends Error {
-  __proto__: Error;
+  __proto__: Error
   constructor(
     message: string,
     public readonly params: {
-      [code: string]: any;
+      [code: string]: any
     } = {}
   ) {
-    super(message);
-    const trueProto = new.target.prototype;
-    this.__proto__ = trueProto;
+    super(message)
+    const trueProto = new.target.prototype
+    this.__proto__ = trueProto
   }
 }

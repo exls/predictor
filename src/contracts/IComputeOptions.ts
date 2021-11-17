@@ -1,3 +1,3 @@
 export interface IComputeOptions {
-  ignoreNulls?: true;
+  ignoreNulls?: true
 }

@@ -1,4 +1,4 @@
-import { IPredictions } from "./IPredictions";
+import { IPredictions } from './IPredictions'
 
 export interface IPrediction {
   /**
@@ -9,15 +9,15 @@ export interface IPrediction {
    *  path = 'data.param'
    *
    */
-  readonly path: string;
+  readonly path: string
   /**
    * Relations value/formula/source
    */
-  readonly sources: string[];
+  readonly sources: string[]
   /**
    * Contains all depdent rules
    */
-  readonly depends: IPredictions;
+  readonly depends: IPredictions
 
-  isComputable(inputs: any): boolean;
+  isComputable(inputs: any): boolean
 }

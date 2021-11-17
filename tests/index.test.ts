@@ -1,5 +1,5 @@
-import { Predictor } from "../src/index";
+import { Predictor } from '../src/index'
 
-test("Has correct instance", () => {
-  expect(new Predictor()).toBeInstanceOf(Predictor);
-});
+test('Has correct instance', () => {
+  expect(new Predictor()).toBeInstanceOf(Predictor)
+})
